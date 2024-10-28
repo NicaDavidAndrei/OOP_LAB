@@ -1,0 +1,6 @@
+﻿Build started at 11:49 AM...
+1>------ Build started: Project: Fahrenheit conversion, Configuration: Debug x64 ------
+1>Temperatureconverter.cpp
+1>Fahrenheit conversion.vcxproj -> C:\Users\David\source\repos\Fahrenheit conversion\x64\Debug\Fahrenheit conversion.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 11:49 AM and took 05.411 seconds ==========
