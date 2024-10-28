@@ -1,0 +1,5 @@
+﻿  T2.1.cpp
+  T2.2.cpp
+  Generating Code...
+T2.2.obj : error LNK2005: main already defined in T2.1.obj
+C:\Users\David\source\repos\OOPLab2\x64\Debug\OOPLab2.exe : fatal error LNK1169: one or more multiply defined symbols found
