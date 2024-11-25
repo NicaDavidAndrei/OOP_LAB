@@ -1,0 +1,13 @@
+﻿  OOP Lab1.cpp
+  T2.1.cpp
+  T2.2.cpp
+  T2.3.cpp
+  T2.4.cpp
+  T2.5.cpp
+  Generating Code...
+T2.1.obj : error LNK2005: main already defined in OOP Lab1.obj
+T2.2.obj : error LNK2005: main already defined in OOP Lab1.obj
+T2.3.obj : error LNK2005: main already defined in OOP Lab1.obj
+T2.4.obj : error LNK2005: main already defined in OOP Lab1.obj
+T2.5.obj : error LNK2005: main already defined in OOP Lab1.obj
+C:\Users\David\Desktop\OOP_REPO\OOP_LAB\OOPLab1\x64\Debug\OOP Lab.exe : fatal error LNK1169: one or more multiply defined symbols found
