@@ -31,11 +31,11 @@ void printPersons(const vector<Person>& persons) {
 int main() {
     // Create a list of persons
     vector<Person> persons = {
-        {"Alice", 30},
+        {"Anne", 15},
         {"Andrew", 25},
         {"Alex", 35},
         {"David", 20},
-        {"Eve", 30}
+        {"Mary", 30}
     };
 
     // Example 1: Sort by age in descending order
