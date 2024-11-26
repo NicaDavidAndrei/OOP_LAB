@@ -171,14 +171,14 @@ int main()
     Engine busEngine("Diesel", 400);
 
     // Create Driver
-    Driver busDriver("John Doe", 45);
+    Driver busDriver("John Snow", 45);
 
     // Create Bus
     Bus bus("Volvo 9900", busEngine, busDriver);
 
     // Create Commuters
-    Commuter commuter1("Alice", 101);
-    Commuter commuter2("Bob", 102);
+    Commuter commuter1("Marie", 101);
+    Commuter commuter2("Mark", 102);
 
     // Add commuters to bus
     bus.addCommuter(commuter1);
