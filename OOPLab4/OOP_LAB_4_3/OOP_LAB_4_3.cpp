@@ -111,18 +111,18 @@ public:
 int main()
 {
     // Create clients
-    Client client1("Alice");
-    Client client2("Bob");
+    Client client1("Victoria");
+    Client client2("Drew");
 
     // Create books
-    Book book1("The Great Gatsby", "F. Scott Fitzgerald");
+    Book book1("Diary of a Wimpy Kid", "Jeff Kinney");
     Book book2("1984", "George Orwell");
 
     // Create reviews and associate them with clients
-    Review* review1 = new Review("An amazing read with deep characters.", client1);
+    Review* review1 = new Review("Relatable to all teenagers worldwide.", client1);
     Review* review2 = new Review("A timeless classic.", client2);
     Review* review3 = new Review("A thought-provoking book about society.", client1);
-    Review* review4 = new Review("Very relevant even today.", client2);
+    Review* review4 = new Review("Way ahead of its time!", client2);
 
     // Add reviews to books
     book1.addReview(review1);
