@@ -59,7 +59,7 @@ int main()
     Student students[] =
     {
         Student("Alice", 89.5),
-        Student("Bob", 95.0),
+        Student("Mark", 95.0),
         Student("Charlie", 95.0),
         Student("Diana", 88.0)
     };
