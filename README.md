@@ -1,4 +1,4 @@
-# OOP_LAB
+# OOP_LAB Nica David Andrei CEN 2.2B
 
 - OOPLab1
 - OOPLab2
