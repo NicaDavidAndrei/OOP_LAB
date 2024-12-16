@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
 using namespace std;
 
 class Driver
@@ -11,14 +10,13 @@ private:
     int driverID;
 
 public:
-    // Constructor
     Driver(string name, int driverID)
     {
         this->name = name;
         this->driverID = driverID;
     }
 
-    // Get Driver Info
+    // Driver Info
     string getName()
     {
         return name;
@@ -29,7 +27,6 @@ public:
         return driverID;
     }
 
-    // Display Driver Info
     void display()
     {
         cout << "Driver Name: " << name << ", Driver ID: " << driverID;
@@ -43,14 +40,13 @@ private:
     string licensePlate;
 
 public:
-    // Constructor
     Car(string carModel, string licensePlate)
     {
         this->carModel = carModel;
         this->licensePlate = licensePlate;
     }
 
-    // Get Car Info
+    // Car Info
     string getCarModel()
     {
         return carModel;
@@ -61,7 +57,6 @@ public:
         return licensePlate;
     }
 
-    // Display Car Info
     void display()
     {
         cout << "Car Model: " << carModel << ", License Plate: " << licensePlate;
@@ -128,11 +123,10 @@ int main()
 {
     DriverCarManager manager;
 
-    // Create Drivers and Cars
-    Driver driver1("Alice", 101);
-    Car car1("Toyota Corolla", "ABC-156");
-    Driver driver2("Bob", 102);
-    Car car2("Honda Civic", "XYZ-879");
+    Driver driver1("Ana", 805);
+    Car car1("Toyota Corolla", "DLJ-156");
+    Driver driver2("Daniel", 154);
+    Car car2("Dacia Logan", "CUB-634");
 
     // Add pairs to the manager
     manager.addPair(driver1, car1);
