@@ -1,17 +1,15 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
 using namespace std;
 
-// Base class Vehicle
+// Base class
 class Vehicle
 {
 protected:
-    string name; // Name of the vehicle
+    string name;
 
 public:
-    // Constructor
     Vehicle(string n) : name(n) {}
 
     // Pure virtual method to start the vehicle
@@ -22,7 +20,6 @@ public:
 class Rocket : public Vehicle
 {
 public:
-    // Constructor
     Rocket(string n) : Vehicle(n) {}
 
     // Override start method
@@ -36,7 +33,6 @@ public:
 class Car : public Vehicle
 {
 public:
-    // Constructor
     Car(string n) : Vehicle(n) {}
 
     // Override start method
