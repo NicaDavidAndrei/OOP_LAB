@@ -1,13 +1,11 @@
 ﻿#include <iostream>
 #include <vector>
-
 using namespace std;
 
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
 #endif
 
-// Abstract Shape class
 class Shape
 {
 public:
@@ -79,9 +77,9 @@ int main()
     vector<Shape*> shapes;
 
     // Create instances of different shapes and add them to the vector
-    shapes.push_back(new Circle(5));   // Circle with radius 5
-    shapes.push_back(new Triangle(4, 6));  // Triangle with base 4 and height 6
-    shapes.push_back(new Square(3));  // Square with side 3
+    shapes.push_back(new Circle(7));   // Circle with radius 7
+    shapes.push_back(new Triangle(6, 8));  // Triangle with base 6 and height 8
+    shapes.push_back(new Square(4));  // Square with side 4
 
     // Compute the sum of areas
     double totalArea = 0;
