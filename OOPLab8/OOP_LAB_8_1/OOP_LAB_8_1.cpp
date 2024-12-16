@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-
 using namespace std;
 
 class ComplexNumber
@@ -10,14 +9,13 @@ private:
     float imag;
 
 public:
-    // Constructor
     ComplexNumber(float real = 0.0, float imag = 0.0)
     {
         this->real = real;
         this->imag = imag;
     }
 
-    // Method to compute the magnitude of the complex number
+    // Computation of the magnitude of the complex number
     float magnitude()
     {
         return sqrt(real * real + imag * imag);
@@ -42,7 +40,7 @@ public:
     }
 };
 
-// Template function to compare two values of the same type
+// Template function to compare two values of same type
 template <typename T>
 bool compareValues(T value1, T value2)
 {
@@ -51,14 +49,12 @@ bool compareValues(T value1, T value2)
 
 int main()
 {
-    // Comparing float numbers
     float num1 = 3.5;
     float num2 = 4.2;
 
     cout << "Comparing float numbers:" << endl;
     cout << num1 << " > " << num2 << " ? " << (compareValues(num1, num2) ? "Yes" : "No") << endl;
 
-    // Comparing complex numbers
     ComplexNumber c1(3, 4); // Magnitude: 5
     ComplexNumber c2(1, 7); // Magnitude: 7.071
 
