@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
 using namespace std;
 
 class Group
@@ -22,7 +21,7 @@ public:
             this->studentID = studentID;
         }
 
-        // Display Student Info
+        // Student Info
         void display()
         {
             cout << "  Student Name: " << name << ", ID: " << studentID << endl;
@@ -46,7 +45,7 @@ public:
         students.push_back(Student(name, studentID)); // Add a new student to the list
     }
 
-    // Display group details
+    // Group details
     void display()
     {
         cout << "Group Name: " << groupName << endl;
@@ -63,18 +62,15 @@ public:
 
 int main()
 {
-    // Create groups
     Group group1("Engineering");
     Group group2("Mathematics");
 
-    // Add students to groups
     group1.addStudent("Alice", 101);
     group1.addStudent("Bob", 102);
 
     group2.addStudent("Charlie", 201);
     group2.addStudent("Diana", 202);
 
-    // Display groups with their students
     cout << "Groups and their Students:" << endl;
 
     group1.display();
