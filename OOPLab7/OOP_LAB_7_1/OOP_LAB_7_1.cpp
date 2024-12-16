@@ -63,15 +63,15 @@ public:
 int main()
 {
     Group group1("Engineering");
-    Group group2("Mathematics");
+    Group group2("Philosophy");
 
-    group1.addStudent("Alice", 101);
-    group1.addStudent("Bob", 102);
+    group1.addStudent("Ana", 101);
+    group1.addStudent("Robert", 102);
 
-    group2.addStudent("Charlie", 201);
-    group2.addStudent("Diana", 202);
+    group2.addStudent("Andrew", 201);
+    group2.addStudent("Jamal", 202);
 
-    cout << "Groups and their Students:" << endl;
+    cout << "Groups + Students:" << endl;
 
     group1.display();
     group2.display();
