@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm> // For func sort
-
 using namespace std;
 
 // Template class to manage a list of elements
@@ -12,7 +11,6 @@ private:
     vector<T> elements; // List of elements
 
 public:
-    // Add element to the list
     void addElement(T element)
     {
         elements.push_back(element);
@@ -75,16 +73,14 @@ class Element
 {
 private:
     int key;      // Key attribute
-    string name;  // Some additional data
+    string name;
 
 public:
-    // Constructor
     Element(int k, string n) : key(k), name(n) {}
 
-    // Getter for the key
+    // Gatterer for the key
     int getKey() { return key; }
 
-    // Display element info
     void display()
     {
         cout << "Key: " << key << ", Name: " << name << endl;
@@ -96,10 +92,9 @@ int main()
     // Create a ListManager for elements of type Element
     ListManager<Element> manager;
 
-    // Add elements to the list
-    manager.addElement(Element(5, "Alice"));
-    manager.addElement(Element(2, "Bob"));
-    manager.addElement(Element(8, "Charlie"));
+    manager.addElement(Element(5, "Maria"));
+    manager.addElement(Element(2, "Aurel"));
+    manager.addElement(Element(8, "Diana"));
 
     // Display keys
     manager.displayKeys();
