@@ -2,7 +2,6 @@
 #include <vector>
 #include <cstdlib>  // For rand()
 #include <ctime>    // For time()
-
 using namespace std;
 
 // Base class Character
@@ -45,7 +44,6 @@ public:
     int getHealth() { return health; }
 };
 
-// Warrior Class
 class Warrior : public Character
 {
 public:
@@ -70,7 +68,6 @@ public:
     }
 };
 
-// Mage Class
 class Mage : public Character
 {
 public:
@@ -164,9 +161,8 @@ public:
 
 int main()
 {
-    srand(time(0));  // Seed for random number generation
+    srand(time(0));
 
-    // Create two teams and add warriors and mages
     Team team1;
     team1.addCharacter(new Warrior("Warrior 1", 100));
     team1.addCharacter(new Mage("Mage 1", 80));
