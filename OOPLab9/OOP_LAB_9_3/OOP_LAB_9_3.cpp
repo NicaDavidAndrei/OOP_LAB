@@ -2,15 +2,14 @@
 #include <vector>
 #include <cstdlib>  // For rand()
 #include <ctime>    // For time()
-
 using namespace std;
 
 // Base class Vehicle
 class Vehicle
 {
 protected:
-    double speed;       // Current speed of the vehicle
-    bool isRunning;     // Whether the vehicle is running
+    double speed;
+    bool isRunning;
 
 public:
     Vehicle() : speed(0), isRunning(false) {}
@@ -113,7 +112,7 @@ double calculateAverageSpeed(const vector<Vehicle*>& vehicles)
 
 int main()
 {
-    srand(time(0));  // Seed for random number generation
+    srand(time(0));
 
     // Create a vector of different vehicles
     vector<Vehicle*> vehicles;
