@@ -14,14 +14,12 @@ public:
         int studentID;
 
     public:
-        // Constructor
         Student(string name, int studentID)
         {
             this->name = name;
             this->studentID = studentID;
         }
 
-        // Student Info
         void display()
         {
             cout << "  Student Name: " << name << ", ID: " << studentID << endl;
@@ -33,19 +31,16 @@ private:
     vector<Student> students; // List of students in the group
 
 public:
-    // Constructor for Group
     Group(string groupName)
     {
         this->groupName = groupName;
     }
 
-    // Add a student to the group
     void addStudent(string name, int studentID)
     {
         students.push_back(Student(name, studentID)); // Add a new student to the list
     }
 
-    // Group details
     void display()
     {
         cout << "Group Name: " << groupName << endl;
