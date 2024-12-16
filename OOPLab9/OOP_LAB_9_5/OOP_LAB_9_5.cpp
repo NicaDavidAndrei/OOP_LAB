@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-
 using namespace std;
 
 // Abstract base class for equations
@@ -10,11 +9,10 @@ public:
     virtual void solve() = 0;  // Pure virtual function for solving equations
 };
 
-// Derived class for first-degree equations (ax + b = 0)
 class FirstDegreeEquation : public Equation
 {
 private:
-    double a, b;  // Coefficients for the first-degree equation
+    double a, b;
 
 public:
     FirstDegreeEquation(double a, double b) : a(a), b(b) {}
@@ -36,11 +34,10 @@ public:
     }
 };
 
-// Derived class for second-degree equations (ax^2 + bx + c = 0)
 class SecondDegreeEquation : public Equation
 {
 private:
-    double a, b, c;  // Coefficients for the second-degree equation
+    double a, b, c;
 
 public:
     SecondDegreeEquation(double a, double b, double c) : a(a), b(b), c(c) {}
@@ -74,10 +71,8 @@ public:
     }
 };
 
-// Main function
 int main()
 {
-    // List of equations to solve
     FirstDegreeEquation eq1(1, -3);      // 1x - 3 = 0
     FirstDegreeEquation eq2(0, 1);       // 1x + 2 = 0 (First degree with a = 0)
     SecondDegreeEquation eq3(1, -3, 2);  // x^2 - 3x + 2 = 0
